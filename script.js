@@ -1,7 +1,11 @@
-const card = document.getElementById("card");
+const musica = document.getElementById("musica");
 
 card.addEventListener("click", () => {
+
     card.classList.toggle("girata");
+
+    musica.play();
+
 });
 
 document.getElementById("nomi").textContent = invito.nomi;
