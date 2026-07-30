@@ -1,9 +1,13 @@
+const suggerimento = document.getElementById("toccaApri");
 const musica = document.getElementById("musica");
 
 card.addEventListener("click", () => {
 
-    card.classList.toggle("girata");
+    if (!card.classList.contains("girata")) {
+        suggerimento.style.opacity = "0";
+    }
 
+    card.classList.toggle("girata");
     musica.play();
 
 });
